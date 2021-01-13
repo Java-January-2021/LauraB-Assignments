@@ -1,9 +1,7 @@
 public class FirstJavaProgram {
     //entry point method
     public static void main(String[] args) { 
-        System.out.println("My name is Laura Bullock.");
-        System.out.println("I am, happy to be alive, years old.");
-        System.out.println("My hometown is Northern Virginia, USA.");
+        System.out.println("\nMy name is Laura Bullock. \n" + "I am, happy to be alive, years old. \n" + "My hometown is Northern Virginia, USA.");
     }
 }
 
