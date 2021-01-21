@@ -12,17 +12,17 @@ public class ProjectTest{
     System.out.println(RED_BOLD_BRIGHT + emptyProject.getName() + "\n" + RESET); //should print null for an empty project
 
 
-    Project project2 = new Project("Java Quilt");
+    Project project2 = new Project("Java");
     String pitch2 = project2.elevatorPitch(); //invokes elevatorPitch() method of Project.java
     System.out.println(CYAN_BOLD_BRIGHT + "Constructor 2 -- Should print the name of the project only." + RESET);
     System.out.println(project2.getName() + "\n"); //prints only the name of the project.  Constructor 2
 
 
-    Project project3 = new Project("Java Quilt", "Create a quilt with cup of java in the center and the concepts as the borders.");
+    Project project3 = new Project("Java Cup Quilt", "Create a quilt with java cup panel in the center and 1 inch, 3 inch, and 5 inch borders.");
     System.out.println(CYAN_BOLD_BRIGHT + "Constructor 3 -- Should print the name of the project and the description." + RESET);
     System.out.println(project3.elevatorPitch() + "\n"); //invokes  elevatorPitch() method of Project.java -- Print the elevator pitch for project 3
 
-    Project optional1 = new Project("Java Quilt", 250.27, "Create a queen-sized quilt with cup of java in the center and the concepts as the borders.");
+    Project optional1 = new Project("QS Java Concepts Quilt", 250.27, "Create a queen-sized quilt with java cup panel and the concepts in separate blocks disbursed throughout and a 3 inch outer borders.");
     System.out.println(CYAN_BOLD_BRIGHT + "Optional Challenge 1 -- Should print the name of the project, initial cost in parenthesis, and the description." + RESET);
     System.out.println(optional1.option1ElevatorPitch()); //invokes option1ElevatorPitch() method of Project.java -- Print the elevator pitch for project 3
     }
