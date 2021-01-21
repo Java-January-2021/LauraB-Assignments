@@ -27,7 +27,7 @@ public class Project { //definition/blueprint for the class
         this.description = description;
     }
 
-    public Project (String name, double initialCost, String description){
+    public Project (String name, String description,  double initialCost){
         this.name = name; //assignment expression
         this.description = description;
         this.initialCost = initialCost; //optional challenge1
