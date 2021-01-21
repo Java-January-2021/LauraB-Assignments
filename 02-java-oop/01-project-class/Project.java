@@ -8,7 +8,7 @@ public class Project { //definition/blueprint for the class
     //Create a Project class that has the fields of name and description.
     private String name;   //field //private because of information hiding - don't reveal more of the content than necessary
     private String description;   //field
-    private double initialCost; //optional challenge1
+    private double initialCost = 0.00; //optional challenge1
 
     //Constructor overloading - different ways to make an object (define multiple constructors with different parameters
     //Constructor

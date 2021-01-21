@@ -8,39 +8,28 @@ public class ProjectTest{
 
     // Create a ProjectTest file that will test all the functionality
     Project emptyProject = new Project();
+    Project javaQuilt = new Project("KS Java Concepts", "118 x 113 sized quilt with java cup panel and the concepts in separate blocks disbursed throughout with 1 inch, 3 inch, and 5 inch outer borders.", 420.75);
+    Project pythonQuilt = new Project("TS Python Concepts", "80 x 108 inch quilt with Monty Python panel and the concepts in separate blocks disbursed throughout with binding.", 120);
+    Project webFunQuilt = new Project("QS Java Concepts", "102 x 113 inch quilt with Web Fundamentals panel and the concepts in separate blocks disbursed throughout and a 3 inch outer borders.", 250);
+
     System.out.println("\n" + CYAN_BOLD_BRIGHT + "Constructor 1  -- Empty Project, should print 'null.'" + RESET);
     System.out.println(RED_BOLD_BRIGHT + emptyProject.getName() + RESET); //should print null for an empty project
 
+    System.out.println("\n" + CYAN_BOLD_BRIGHT + "Constructor 2 -- Should print the name of the project only." + RESET);
+    System.out.println(javaQuilt.getName()); //prints only the name of the javaQuilt project.  Constructor 2
+    System.out.println(pythonQuilt.getName()); //prints only the name of the pythonQuilt project.
+    System.out.println(webFunQuilt.getName()); //prints only the name of the webFunQuilt project.
 
-    Project javaQuilt = new Project("Java Quilt");
-    Project pythonQuilt = new Project("Python Quilt");
-    Project webFunQuilt = new Project("Web Fundamentals Quilt");
-    String pitch = javaQuilt.elevatorPitch(); //invokes elevatorPitch() method of Project.java
-    System.out.println(CYAN_BOLD_BRIGHT + "\nConstructor 2 -- Should print the name of the project only." + RESET);
-    System.out.println(javaQuilt.getName()); //prints only the name of the project.  Constructor 2
-    System.out.println(pythonQuilt.getName());
-    System.out.println(webFunQuilt.getName());
+    System.out.println("\n" + CYAN_BOLD_BRIGHT + "Constructor 3 -- Should print the name of the project and the description." + RESET);
+    System.out.println(javaQuilt.elevatorPitch()); //invokes  elevatorPitch() method of Project.java -- Print the elevator pitch for javaCupQuilt
+    System.out.println(pythonQuilt.elevatorPitch()); //invokes  elevatorPitch() method of Project.java -- Print the elevator pitch for montyPythonQuilt
+    System.out.println(webFunQuilt.elevatorPitch()); //invokes  elevatorPitch() method of Project.java -- Print the elevator pitch for WebFunWorldQuilt
 
-    Project javaCupQuilt = new Project("Java Cup Quilt", "Create a quilt with java cup panel in the center and 1 inch, 3 inch, and 5 inch borders.");
-    Project pythonSnakeQuilt = new Project("Monty Python Quilt", "Create a quilt with Monty Python panel in the center with borders and binding.");
-    Project WebFunWorldQuilt = new Project("Web World Quilt", "Create a quilt with WWW Fundamentals panel in the center with borders.");
-
-    System.out.println(CYAN_BOLD_BRIGHT + "\nConstructor 3 -- Should print the name of the project and the description." + RESET);
-    System.out.println(javaCupQuilt.elevatorPitch()); //invokes  elevatorPitch() method of Project.java -- Print the elevator pitch for project 3
-    System.out.println(pythonSnakeQuilt.elevatorPitch()); //invokes  elevatorPitch() method of Project.java -- Print the elevator pitch for project 3
-    System.out.println(WebFunWorldQuilt.elevatorPitch()); //invokes  elevatorPitch() method of Project.java -- Print the elevator pitch for project 3
-
-    Project javaConceptsQuilt = new Project("KS Java Concepts Quilt", "Create a king-sized quilt with java cup panel and the concepts in separate blocks disbursed throughout and a 5 inch outer borders.", 380.75);
-    Project pythonConceptsQuilt = new Project("TS Python Concepts Quilt", "Create a twin-sized quilt with Monty Python panel and the concepts in separate blocks disbursed throughout with binding.", 120.27);
-    Project webFunConceptsQuilt = new Project("QS Java Concepts Quilt", "Create a queen-sized quilt with Web Fundamentals panel and the concepts in separate blocks disbursed throughout and a 3 inch outer borders.", 250.27);
-
-    System.out.println(CYAN_BOLD_BRIGHT + "\nOptional Challenge 1 -- Should print the name of the project, initial cost in parenthesis, and the description." + RESET);
-    System.out.println(javaConceptsQuilt.option1ElevatorPitch()); //invokes option1ElevatorPitch() method of Project.java -- Print the elevator pitch for project 3
-    System.out.println(pythonConceptsQuilt.option1ElevatorPitch()); //invokes option1ElevatorPitch() method of Project.java -- Print the elevator pitch for project 3
-    System.out.println(webFunConceptsQuilt.option1ElevatorPitch()); //invokes option1ElevatorPitch() method of Project.java -- Print the elevator pitch for project 3
-
-
-}
+    System.out.println("\n" + CYAN_BOLD_BRIGHT + "Optional Challenge 1 -- Should print the name of the project, initial cost in parenthesis, and the description." + RESET);
+    System.out.println(javaQuilt.option1ElevatorPitch()); //invokes option1ElevatorPitch() method of Project.java -- Print the elevator pitch for javaConceptsQuilt
+    System.out.println(pythonQuilt.option1ElevatorPitch()); //invokes option1ElevatorPitch() method of Project.java -- Print the elevator pitch for pythonConceptsQuilt
+    System.out.println(webFunQuilt.option1ElevatorPitch()); //invokes option1ElevatorPitch() method of Project.java -- Print the elevator pitch for webFunConceptsQuilt
+    }
 }
 
 // NOTE:
