@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+
+h5{
+	background-color: red;
+	color: yellow;
+}
+
+button{
+	background-color: orange;
+}
+
+legend{
+	color: purple;
+	font-size: 40px;
+	font-weight: bold;
+	background-color: teal;
+	border-radius: 20px;
+
+}
+@keyframes color-change {
+  from {background-color: black;}
+  to {background-color: grey;}
+  to {background-color: white;}
+}
+
+
+#colors{
+	background-color: white;
+	animation-name: color-change;
+	animation-duration: 10s;
+}
+
+li{
+	color: teal;
+	font-size: 35px;
+	margin-left:  350px;
+
+}
